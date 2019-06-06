@@ -1,8 +1,8 @@
 const isit = require('prose_isit');
 const Matrix = require('prose_matrix2d');
 
-const config = require("./lib/config.js")
-const calculateWinner = require("./lib/CalculateWinner.js")
+const config = require("./lib/config.js");
+const calculateWinner = require("./lib/CalculateWinner.js");
 
 const TURNS = config.SIZE * config.SIZE;
 
@@ -27,13 +27,12 @@ module.exports = class TickTacToe {
   // and as such that is the player move we execute.
   move(x, y) {
     if (
-      (this._done)
-			||
+      (this._done) ||
       isit.notNil(this._matrix.get(x, y))
     ) {
       return false;
     }
-    this._matrix.set(x,y,this._turn);
+    this._matrix.set(x, y, this._turn);
     this._winner = calculateWinner(this._matrix);
     if (this._winner) {
       this._done = true;
@@ -49,18 +48,18 @@ module.exports = class TickTacToe {
 
   squares() {
     return this._matrix.raw();
-	}
+  }
 
   turn() {
     return this._turn;
   }
 
   value(x, y) {
-    return this._matrix.get(x,y);
+    return this._matrix.get(x, y);
   }
 
   winner() {
     return this._done ? this._winner : false;
   }
 
-}
+};
