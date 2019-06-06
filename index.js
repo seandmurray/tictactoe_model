@@ -47,6 +47,10 @@ module.exports = class TickTacToe {
     return true;
   }
 
+  squares() {
+    return this._matrix.copy();
+	}
+
   turn() {
     return this._turn;
   }
