@@ -1,0 +1,32 @@
+{
+  "name": "tictactoe_model",
+  "version": "1.0.1",
+  "description": "A logical model for the tictactoe game",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "crosses",
+    "example",
+    "game",
+    "naughts",
+    "Os",
+    "tic-tac-toe",
+    "tictactoe",
+    "Xs"
+  ],
+  "authors": [
+    "Sean D. Murray"
+  ],
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seandmurray/tictactoe_model"
+  },
+  "dependencies": {
+    "prose_isit": "*",
+    "prose_matrix2d": "*"
+  },
+  "devDependencies": {}
+}
