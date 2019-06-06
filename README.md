@@ -8,6 +8,7 @@ A logical model playing the tic-tac-toe (naughts & crosses, Xs & Os) game.
 ## Usage
 
 ```javascript
+const TicTacToe = require('tictactoe_model');
 const ticTacToe = new TicTacToe();
 // Get whoes turn it is.
 ticTacToe.turn();
