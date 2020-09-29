@@ -1,4 +1,4 @@
-const isit = require('prose_isit');
+const is = require('prose_is');
 const Matrix = require('prose_matrix2d');
 
 const config = require("./lib/config.js");
@@ -28,7 +28,7 @@ module.exports = class TickTacToe {
   move(x, y) {
     if (
       (this._done) ||
-      isit.notNil(this._matrix.get(x, y))
+      is.notNil(this._matrix.get(x, y))
     ) {
       return false;
     }
