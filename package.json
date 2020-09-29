@@ -1,6 +1,6 @@
 {
   "name": "tictactoe_model",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A logical model for the tictactoe game",
   "license": "MIT",
   "main": "index.js",
